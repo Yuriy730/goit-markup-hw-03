@@ -1,0 +1,142 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+}
+.body {
+  font-family: Roboto;
+  color: var(--primery-text-color);
+  font-weight: 500;
+  background-color: var(--primery-white-color);
+}
+/* Header */
+.logo-accent {
+  color: var(--accent-color);
+}
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.navigation-list-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: var(--accent-color);
+}
+
+/* contacts */
+.address-cont .address-mail {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+}
+.address-cont .address-mail:hover,
+.address-cont .address-mail:focus {
+  color: var(--accent-color);
+}
+
+.address-cont .address-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+}
+.address-cont .address-tel:hover,
+.address-cont .address-tel:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /*color: #ffffff;*/
+  background-color: ;
+}
+
+/* button */
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  letter-spacing: 0.06em;
+  /* color: #ffffff; */
+}
+
+/* features */
+.section-title,
+.features .title {
+  color: var(--title-text-color);
+}
+
+/*crew*/
+.crewlist .name {
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/*our service*/
+.service-list .service-item {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.service .service-item:hover,
+.service .service-item:focus {
+  color: var(--accent-color);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project .project-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+}
+.footer {
+  background-color: #2f303a;
+}
+.footer .logo {
+  color: var(--primery-white-color);
+}
+/*sity*/
+.footer .location {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  /*color: #ffffff;*/
+}
