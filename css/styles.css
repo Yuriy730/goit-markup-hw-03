@@ -45,7 +45,7 @@ img {
   align-items: center;
 }
 .header .logo {
-  margin: 93px;
+  margin: 0 93px 0 0;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -87,7 +87,7 @@ img {
   display: flex;
 }
 .address-list {
-  margin: 50px;
+  margin: 0 0 0 50px;
 }
 
 .address-cont .address-mail {
