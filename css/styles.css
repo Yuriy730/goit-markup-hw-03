@@ -10,6 +10,26 @@
   font-weight: 500;
   background-color: var(--primery-white-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
 /* Header */
 .logo-accent {
   color: var(--accent-color);
@@ -21,6 +41,7 @@
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #000000;
+  /*outline: 2px solid tomato;*/
 }
 .navigation-list-link {
   font-family: "Roboto", sans-serif;
@@ -68,18 +89,22 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #ffffff;*/
-  background-color: ;
+  color: var(--primery-white-color);
+  background-color: #2f303a;
+  outline-color: 1px tomato;
 }
 
 /* button */
 .modal-btn {
+  border-radius: 4px;
+  padding: 12px 30px 8px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
   letter-spacing: 0.06em;
-  /* color: #ffffff; */
+  color: var(--primery-white-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
 }
 
 /* features */
