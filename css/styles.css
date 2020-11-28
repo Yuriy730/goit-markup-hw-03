@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-white-color: #ffffff;
+  /*--background-color: #ffffff;
 }
 .body {
   font-family: Roboto;
@@ -31,6 +32,11 @@ img {
 }
 
 /* Header */
+.header {
+  width: 1200;
+  padding: 0, 15px;
+  margin: 0, auto;
+}
 .header .container {
   display: flex;
 }
