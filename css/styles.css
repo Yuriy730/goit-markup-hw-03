@@ -31,6 +31,16 @@ img {
 }
 
 /* Header */
+.header .container {
+  display: flex;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin: 93px;
+}
 .logo-accent {
   color: var(--accent-color);
 }
@@ -42,6 +52,12 @@ img {
   letter-spacing: 0.03em;
   color: #000000;
   /*outline: 2px solid tomato;*/
+}
+.navigation-list {
+  display: flex;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 .navigation-list-link {
   font-family: "Roboto", sans-serif;
@@ -57,6 +73,18 @@ img {
 }
 
 /* contacts */
+.container .contacts-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.address-cont {
+  display: flex;
+}
+.address-list {
+  margin: 50px;
+}
+
 .address-cont .address-mail {
   font-style: normal;
   font-size: 14px;
@@ -91,7 +119,6 @@ img {
   text-transform: uppercase;
   color: var(--primery-white-color);
   background-color: #2f303a;
-  outline-color: 1px tomato;
 }
 
 /* button */
