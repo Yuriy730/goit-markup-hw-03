@@ -115,8 +115,7 @@ img {
 }
 
 /* Hero */
-.hero-act {
-}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -129,6 +128,9 @@ img {
 }
 
 /* button */
+.hero-act {
+  background-color: #2f303a;
+}
 .modal-btn {
   border-radius: 4px;
   padding: 12px 30px 8px;
