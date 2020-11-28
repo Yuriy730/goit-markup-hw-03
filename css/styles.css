@@ -33,9 +33,9 @@ img {
 
 /* Header */
 .header {
-  width: 1200;
-  padding: 0, 15px;
-  margin: 0, auto;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .header .container {
   display: flex;
@@ -57,7 +57,6 @@ img {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #000000;
-  /*outline: 2px solid tomato;*/
 }
 .navigation-list {
   display: flex;
@@ -116,6 +115,8 @@ img {
 }
 
 /* Hero */
+.hero-act {
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
