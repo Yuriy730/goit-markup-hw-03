@@ -3,7 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-white-color: #ffffff;
-  --background-color: #ffffff;
+  /*--background-color: #ffffff;*/
 }
 .body {
   font-family: Roboto;
@@ -32,25 +32,17 @@ img {
 }
 
 /* Header */
-.header {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.header .container {
+.container {
   display: flex;
 }
 .navigation {
   display: flex;
-  align-items: center;
-}
-.header .logo {
-  margin: 0 93px 0 0;
 }
 .logo-accent {
   color: var(--accent-color);
 }
 .logo {
+  align-items: center;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -60,9 +52,7 @@ img {
 }
 .navigation-list {
   display: flex;
-}
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
+  align-items: center;
 }
 .navigation-list-link {
   font-family: "Roboto", sans-serif;
@@ -78,18 +68,10 @@ img {
 }
 
 /* contacts */
-.container .contacts-box {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
 .address-cont {
   display: flex;
+  align-items: center;
 }
-.address-list {
-  margin: 0 0 0 50px;
-}
-
 .address-cont .address-mail {
   font-style: normal;
   font-size: 14px;
@@ -115,12 +97,6 @@ img {
 }
 
 /* Hero */
-.hero {
-  text-align: center;
-  background-color: #2f303a;
-}
-.hero-act {
-}
 
 .hero-title {
   font-weight: 900;
