@@ -44,6 +44,7 @@ img {
   color: var(--accent-color);
 }
 .logo {
+  margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -54,6 +55,9 @@ img {
 .navigation-list {
   display: flex;
   align-items: center;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 .navigation-list-link {
   font-family: "Roboto", sans-serif;
@@ -69,11 +73,15 @@ img {
 }
 
 /* contacts */
-.address {
+.contacts-box {
+  display: flex;
+  align-items: center;
+}
+.address-cont {
   display: flex;
 }
-.address .address-cont {
-  display: flex;
+.address-list:not(:last-child) {
+  margin-right: 50px;
 }
 .address-cont .address-mail {
   font-style: normal;
@@ -102,12 +110,12 @@ img {
 /* Hero */
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-white-color);
