@@ -278,19 +278,21 @@ img {
   background-color: #2f303a;
 }
 .tube {
-  display: inline;
   width: 1200px;
   padding: 60px 15px;
   margin-left: auto;
   margin-right: auto;
 }
 .tube .logo-tube {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+  color: var(--primery-white-color);
+}
+.address-mail-item .location {
   color: var(--primery-white-color);
 }
 .address-tube {
@@ -303,12 +305,12 @@ img {
   margin-bottom: 9px;
 }
 
-.footer .location {
+.address-tube .location {
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-weight: 400;
   color: var(--primery-text-color);
 }
