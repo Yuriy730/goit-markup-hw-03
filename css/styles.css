@@ -65,6 +65,7 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  font-weight: 500;
   color: var(--title-text-color);
 }
 
@@ -89,6 +90,7 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  font-weight: 500;
   color: var(--primery-text-color);
 }
 .address-cont .address-mail:hover,
@@ -101,6 +103,7 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  font-weight: 500;
   color: var(--primery-text-color);
 }
 .address-cont .address-tel:hover,
@@ -115,6 +118,7 @@ img {
   padding: 200px 0;
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -128,22 +132,22 @@ img {
 
 .modal-btn {
   border-radius: 4px;
-  padding: 12px 30px 8px;
-  margin: 30px;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--primery-white-color);
   background-color: var(--accent-color);
-  border-color: transparent;
+  border-color: none;
+  outline: none;
 }
 
 /* features */
 .features {
   width: 1200px;
-  padding-top: 93px;
-  padding-bottom: 95px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -191,7 +195,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 95px;
+  padding-bottom: 94px;
 }
 .duties-element {
   width: 370px;
@@ -214,7 +218,7 @@ img {
 /*crew*/
 .section-crew {
   width: 1200px;
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
@@ -274,17 +278,29 @@ img {
   background-color: #2f303a;
 }
 .tube {
+  display: inline;
   width: 1200px;
   padding: 60px 15px;
   margin-left: auto;
   margin-right: auto;
 }
-.tube .logo {
+.tube .logo-tube {
   margin-bottom: 30px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
   color: var(--primery-white-color);
 }
 .address-tube {
   display: flex;
+}
+.address-tube-list {
+  margin-top: 20px;
+}
+.address-mail-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer .location {
@@ -292,15 +308,8 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
-}
-.location {
   margin-bottom: 10px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--primery-text-color);
 }
 
