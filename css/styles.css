@@ -212,11 +212,45 @@ img {
 }
 
 /*crew*/
-.crewlist .name {
-  font-size: 16px;
-  line-height: 1.187;
+.section-crew {
+  width: 1200px;
+  padding-top: 100px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f5f4fa;
+}
+.section-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 166;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 57px;
+}
+.crew {
+  display: flex;
+  width: 270px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.crewlist:not(:last-child) {
+  margin-right: 30px;
+}
+.crew .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.187;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .project-title {
@@ -235,25 +269,44 @@ img {
   color: var(--primery-text-color);
 }
 .footer {
+  display: flex;
   background-color: #2f303a;
 }
-.footer .logo {
+.tube {
+  width: 1200px;
+  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tube .logo {
+  margin-bottom: 30px;
   color: var(--primery-white-color);
 }
-/*sity*/
-.address-tube {
+/*-- footer --*/
+.footer .location {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.location {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
+
 .address-tube .address-mail {
+  margin-bottom: 20px;
   font-style: normal;
+  font-weight: normal;
   font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: var(--primery-text-color);
+  line-height: 1.143px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .address-tube .address-mail:hover,
 .address-tube .address-mail:focus {
@@ -264,18 +317,10 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: var(--primery-text-color);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .address-tube .address-tel:hover,
 .address-tube .address-tel:focus {
   color: var(--accent-color);
-}
-
-.footer {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  /*color: #ffffff;*/
 }
