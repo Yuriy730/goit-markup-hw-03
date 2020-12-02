@@ -9,7 +9,6 @@
   font-family: "Roboto", sans-serif;
   color: var(--primery-text-color);
   background-color: var(--primery-white-color);
-  margin: 0;
 }
 h1,
 h2,
@@ -32,21 +31,15 @@ img {
 }
 
 .container {
-  flex-direction: column;
-  display: flex;
-  width: 1200px;
+  width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.navigation {
-  display: flex;
-  padding: 30px 0;
-}
+
 .logo-accent {
   color: var(--accent-color);
 }
 .logo {
-  margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -54,13 +47,7 @@ img {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.navigation-list {
-  display: flex;
-  align-items: center;
-}
-.navigation .navigation-list-item:not(:last-child) {
-  margin-right: 50px;
-}
+
 .navigation-list-link {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -76,29 +63,7 @@ img {
 }
 
 /* contacts */
-/*.container-box {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;*/
-}
-.container-first {
-  display: flex;
-}
-.address {
-  display: flex;
-}
-.address .address-cont {
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-}
-.address .address-list:not(:last-child) {
-  margin-right: 50px;
-}
-.address .address-mail {
-  margin-left: 330px;
-}
+
 .address-cont .address-mail {
   font-style: normal;
   font-weight: 500;
@@ -173,16 +138,10 @@ img {
   overflow: hidden;
 }
 
-.features-list {
-  display: flex;
-  padding-top: 94px;
-}
 .features-list-title {
-  padding-bottom: 10px;
   color: var(--title-text-color);
 }
 .features-list .features-list-item {
-  padding-bottom: 94px;
   font-weight: 400;
   width: 270px;
   font-style: normal;
@@ -191,32 +150,18 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
 }
-.features-list-item + .features-list-item {
-  margin-left: 30px;
-}
 
 /*===== Subject of duties =========*/
 
-.section-duties {
-  padding: 0 0 50px;
-}
-
 .section-duties-title {
-  margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.container-duties {
-  display: flex;
-}
-.duties-element:not(:last-child) {
-  margin-right: 30px;
-}
+
 /*==========portfolio============*/
 
 .service-list .service-item {
@@ -225,7 +170,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  /*text-align: center;*/
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: #f5f4fa;
@@ -236,33 +180,16 @@ img {
   color: var(--accent-color);
 }
 
-.section-crew {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background: #f5f4fa;
-}
 .section-crew-title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1, 166;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 57px;
 }
-.crew {
-  display: flex;
-  width: 270px;
-  text-align: center;
-  padding-bottom: 30px;
-}
-.crewlist:not(:last-child) {
-  margin-right: 30px;
-}
+
 .crew .name {
-  margin-top: 30px;
-  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.187;
   font-weight: 500;
@@ -280,7 +207,7 @@ img {
   color: var(--title-text-color);
 }
 .project-img {
-  background-color: F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .project .project-text {
@@ -292,13 +219,10 @@ img {
 }
 /*-- footer --*/
 .footer {
-  display: flex;
   background-color: #2f303a;
 }
 
 .footer .logo-tube {
-  padding-top: 60px;
-  margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -308,14 +232,6 @@ img {
 }
 .address-mail-item .location {
   color: var(--primery-white-color);
-}
-.address-tube {
-  display: flex;
-  padding-bottom: 60px;
-}
-
-.address-mail-item:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .address-tube .location {
@@ -329,7 +245,6 @@ img {
 }
 
 .address-tube .address-mail {
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
