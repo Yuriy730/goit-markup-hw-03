@@ -32,6 +32,7 @@ img {
 }
 
 .container {
+  flex-direction: column;
   display: flex;
   width: 1200px;
   padding: 0 15px;
@@ -92,12 +93,6 @@ img {
 .address .address-mail {
   margin-left: 330px;
 }
-
-
-
-
-
-
 .address-cont .address-mail {
   font-style: normal;
   font-size: 14px;
@@ -159,14 +154,9 @@ img {
 
 /* features */
 .container-second {
-  /* width: 1200px;*/
   padding-top: 94px;
   padding-bottom: 94px;
-  /* padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;*/
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -183,7 +173,12 @@ img {
 .features-list {
   display: flex;
 }
-.features-list-item {
+.features-list-title {
+  padding-bottom: 10px;
+  color: var(--title-text-color);
+}
+.features-list .features-list-item {
+  padding-top: 94px;
   font-weight: 400;
   width: 270px;
   font-style: normal;
@@ -195,20 +190,15 @@ img {
 .features-list-item + .features-list-item {
   margin-left: 30px;
 }
-.features-list-title {
-  padding-bottom: 10px;
-  color: var(--title-text-color);
+
+/*===== Subject of duties =========*/
+
+.section-duties {
+  padding: 94px 0 50px;
 }
 
-  /*our service*/
-  /*.container-job {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
-}*/
 .section-duties-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -217,27 +207,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
 .container-duties {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 94px;
 }
-.duties-element {
-  width: 370px;
-}
-.service-title {
-  display: none;
-}
-
-.service-list {
-  display: flex;
-  /*justify-content: center;*/
-}
-/*.service-list .service-item:not(:last-child) {
-  margin-right: 8px;*/
-}
+/*==========portfolio============*/
 .service-list .service-item {
   font-family: Roboto;
   font-style: normal;
@@ -255,26 +228,12 @@ img {
   color: var(--accent-color);
 }
 
-/*crew*/
-/*.container-crew {
-  display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 .section-crew {
-  /*width: 1200px;*/
   padding-top: 94px;
   padding-bottom: 94px;
-  /*padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;*/
   background: #f5f4fa;
 }
-.section-title {
+.section-crew-title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
