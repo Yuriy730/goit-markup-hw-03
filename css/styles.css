@@ -79,7 +79,6 @@ img {
 .container-box {
   display: flex;
   width: 1200px;
-
   margin: 0 auto;
 }
 .container-first {
@@ -159,10 +158,7 @@ img {
 }
 
 /* features */
-.container-second {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -178,13 +174,14 @@ img {
 
 .features-list {
   display: flex;
+  padding-top: 94px;
 }
 .features-list-title {
   padding-bottom: 10px;
   color: var(--title-text-color);
 }
 .features-list .features-list-item {
-  padding-top: 94px;
+  padding-bottom: 94px;
   font-weight: 400;
   width: 270px;
   font-style: normal;
@@ -200,7 +197,7 @@ img {
 /*===== Subject of duties =========*/
 
 .section-duties {
-  padding: 94px 0 50px;
+  padding: 0 0 50px;
 }
 
 .section-duties-title {
@@ -216,7 +213,11 @@ img {
 .container-duties {
   display: flex;
 }
+.duties-element:not(:last-child) {
+  margin-right: 30px;
+}
 /*==========portfolio============*/
+
 .service-list .service-item {
   font-family: Roboto;
   font-style: normal;
@@ -295,6 +296,7 @@ img {
 }
 
 .footer .logo-tube {
+  padding-top: 60px;
   margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
@@ -308,11 +310,9 @@ img {
 }
 .address-tube {
   display: flex;
-  padding: 60px 15px;
+  padding-bottom: 60px;
 }
-.address-tube-list {
-  margin-top: 20px;
-}
+
 .address-mail-item:not(:last-child) {
   margin-bottom: 9px;
 }
