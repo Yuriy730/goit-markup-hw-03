@@ -9,6 +9,7 @@
   font-family: Roboto;
   color: var(--primery-text-color);
   background-color: var(--primery-white-color);
+  margin: 0;
 }
 h1,
 h2,
@@ -29,16 +30,16 @@ p {
 img {
   display: block;
 }
-  /* Header */
-.container-first {
+
+.container {
   display: flex;
-  padding: 30px 15px;
-  justify-content: space-between;
   width: 1200px;
-  margin: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .navigation {
   display: flex;
+  padding: 30px 0;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -56,7 +57,7 @@ img {
   display: flex;
   align-items: center;
 }
-.navigation-list-item:not(:last-child) {
+.navigation .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
 .navigation-list-link {
@@ -74,16 +75,29 @@ img {
 }
 
 /* contacts */
-.contacts-box {
+.container-first {
+  display: flex;
+}
+.address {
+  display: flex;
+}
+.address .address-cont {
   display: flex;
   align-items: center;
+  padding: 30px 0;
 }
-.address-cont {
-  display: flex;
-}
-.address-list:not(:last-child) {
+.address .address-list:not(:last-child) {
   margin-right: 50px;
 }
+.address .address-mail {
+  margin-left: 330px;
+}
+
+
+
+
+
+
 .address-cont .address-mail {
   font-style: normal;
   font-size: 14px;
@@ -111,6 +125,7 @@ img {
 }
 
 /* Hero */
+
 .hero {
   background-color: #2f303a;
   text-align: center;
@@ -143,16 +158,26 @@ img {
 }
 
 /* features */
-.features {
-  width: 1200px;
+.container-second {
+  /* width: 1200px;*/
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 15px;
+  /* padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: auto;*/
 }
-.features-title {
-  display: none;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-list {
@@ -175,7 +200,13 @@ img {
   color: var(--title-text-color);
 }
 
-/*our service*/
+  /*our service*/
+  /*.container-job {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}*/
 .section-duties-title {
   padding-bottom: 50px;
   font-style: normal;
@@ -186,13 +217,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.section-duties {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .container-duties {
   display: flex;
   align-items: center;
@@ -201,15 +226,6 @@ img {
 }
 .duties-element {
   width: 370px;
-}
-
-.container-service {
-  display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .service-title {
   display: none;
@@ -238,19 +254,24 @@ img {
 .service .service-item:focus {
   color: var(--accent-color);
 }
-.group-title {
-  display: none;
-}
 
 /*crew*/
-.section-crew {
+/*.container-crew {
+  display: flex;
   width: 1200px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}*/
+.section-crew {
+  /*width: 1200px;*/
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /*padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;*/
   background: #f5f4fa;
 }
 .section-title {
@@ -307,13 +328,8 @@ img {
   display: flex;
   background-color: #2f303a;
 }
-.tube {
-  width: 1200px;
-  padding: 60px 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.tube .logo-tube {
+
+.footer .logo-tube {
   margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
@@ -327,6 +343,7 @@ img {
 }
 .address-tube {
   display: flex;
+  padding: 60px 15px;
 }
 .address-tube-list {
   margin-top: 20px;
