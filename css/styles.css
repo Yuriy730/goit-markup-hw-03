@@ -6,7 +6,7 @@
   /*--background-color: #ffffff;*/
 }
 .body {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   color: var(--primery-text-color);
   background-color: var(--primery-white-color);
   margin: 0;
@@ -76,10 +76,11 @@ img {
 }
 
 /* contacts */
-.container-box {
+/*.container-box {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;*/
 }
 .container-first {
   display: flex;
@@ -100,10 +101,10 @@ img {
 }
 .address-cont .address-mail {
   font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  font-weight: 500;
   color: var(--primery-text-color);
 }
 .address-cont .address-mail:hover,
