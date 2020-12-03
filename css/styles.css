@@ -279,8 +279,11 @@ img {
 .project {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 94px;
+  outline: 2px solid tomato;
 }
 .project-title {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -288,6 +291,7 @@ img {
   color: var(--title-text-color);
 }
 .project-img {
+  margin-bottom: 30px;
   width: 370px;
   background-color: #f5f4fa;
 }
@@ -299,6 +303,10 @@ img {
   font-size: 16px;
   line-height: 1.875px;
   letter-spacing: 0.03em;
+}
+.text-box {
+  padding-bottom: 30px;
+  color: var(--primery-text-color);
 }
 /*==============FOOTER================*/
 .footer {
