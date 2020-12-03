@@ -3,15 +3,15 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-white-color: #ffffff;
-  /*--background-color: #ffffff;*/
+
+  --secondary-background-color: #f5f4fa;
 }
 .body {
   font-family: "Roboto", sans-serif;
   color: var(--primery-text-color);
-  background-color: var(--primery-white-color);
 }
-/*=============UTILITIES============>
-/*h1,
+/*=============UTILITIES============>*/
+h1,
 h2,
 h3,
 h4,
@@ -26,7 +26,7 @@ ol {
 }
 p {
   margin: 0;
-}*/
+}
 img {
   display: block;
 }
@@ -47,10 +47,25 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+/*==========UTILITIES=========*/
+
+/*==========HEADER==========*/
+.rubric {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 25 0;
+}
+
 .logo-accent {
   color: var(--accent-color);
 }
 .logo {
+  margin-right: 94px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -58,7 +73,12 @@ img {
   letter-spacing: 0.03em;
   color: #000000;
 }
-
+.navigation-list {
+  display: flex;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
 .navigation-list-link {
   font-size: 14px;
   line-height: 1.143;
@@ -74,6 +94,19 @@ img {
 
 /* contacts */
 
+.address {
+  display: flex;
+}
+.address > .address-cont {
+  display: flex;
+  align-items: center;
+}
+.address-list:not(:last-child) {
+  margin-right: 50px;
+}
+.address-mail {
+  margin-left: 330px;
+}
 .address-cont .address-mail {
   font-style: normal;
   font-weight: 500;
@@ -99,6 +132,7 @@ img {
 .address-cont .address-tel:focus {
   color: var(--accent-color);
 }
+/*=========HEADER==========*/
 
 /* Hero */
 
@@ -134,7 +168,11 @@ img {
 }
 
 /* features */
-
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 94px 0;
+}
 .features-list-title {
   color: var(--title-text-color);
 }
@@ -151,12 +189,20 @@ img {
 /*===== Subject of duties =========*/
 
 .section-duties-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.container-duties {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
 }
 
 /*==========portfolio============*/
@@ -169,15 +215,21 @@ img {
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  background-color: #f5f4fa;
 }
 
 .service .service-item:hover,
 .service .service-item:focus {
   color: var(--accent-color);
 }
-
+/*=================CREW======================*/
+.section-crew {
+  background-color: var(--secondary-background-color);
+}
 .section-crew-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 94px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -185,8 +237,20 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
-.crew .name {
+.crew {
+  display: flex;
+}
+.crew > .crewlist + .crewlist {
+  margin-left: 30px;
+}
+.crewlist .passport {
+  text-align: center;
+  padding: 30px 0 94px;
+}
+.crewlist .name {
+  margin-bottom: 10px;
+}
+.crewlist .name {
   font-size: 16px;
   line-height: 1.187;
   font-weight: 500;
@@ -195,7 +259,7 @@ img {
   font-style: normal;
   letter-spacing: 0.03em;
 }
-
+/*==========PORTFOLIO PROJECT=============*/
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -214,12 +278,22 @@ img {
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
-/*-- footer --*/
+/*==============FOOTER================*/
 .footer {
   background-color: #2f303a;
 }
+.tube {
+  padding-top: 60px;
+  /*outline: 2px solid tomato;*/
+}
 
-.footer .logo-tube {
+.address-tube {
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  /*outline: 2px solid tomato;*/
+}
+.tube .logo-tube {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -227,7 +301,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--primery-white-color);
 }
-.address-mail-item .location {
+.address-mail-item {
+  margin-bottom: 9px;
   color: var(--primery-white-color);
 }
 
@@ -241,7 +316,7 @@ img {
   color: var(--primery-white-color);
 }
 
-.address-tube .address-mail {
+.address-tube .address-mail-unit {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -249,19 +324,19 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.address-tube .address-mail:hover,
-.address-tube .address-mail:focus {
+.address-tube .address-mail-unit:hover,
+.address-tube .address-mail-unit:focus {
   color: var(--accent-color);
 }
 
-.address-tube .address-tel {
+.address-tube .address-tel-unit {
   font-style: normal;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.address-tube .address-tel:hover,
-.address-tube .address-tel:focus {
+.address-tube .address-tel-unit:hover,
+.address-tube .address-tel-unit:focus {
   color: var(--accent-color);
 }
