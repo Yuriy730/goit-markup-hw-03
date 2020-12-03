@@ -54,6 +54,7 @@ img {
   display: flex;
   align-items: center;
   padding: 20px 0;
+  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
@@ -206,8 +207,21 @@ img {
 }
 
 /*==========portfolio============*/
+.service-visual {
+  display: flex;
+  justify-content: center;
+}
+.service-list {
+  display: flex;
+  padding-top: 94px;
+  margin-bottom: 45px;
+}
+.service-list > .button-box:not(:last-child) {
+  margin-right: 8px;
+}
 
-.service-list .service-item {
+.service-list .button-item {
+  padding: 7px 22px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -215,6 +229,10 @@ img {
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  transform: rotate(-0.72deg);
 }
 
 .service .service-item:hover,
@@ -249,8 +267,6 @@ img {
 }
 .crewlist .name {
   margin-bottom: 10px;
-}
-.crewlist .name {
   font-size: 16px;
   line-height: 1.187;
   font-weight: 500;
@@ -260,6 +276,10 @@ img {
   letter-spacing: 0.03em;
 }
 /*==========PORTFOLIO PROJECT=============*/
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -268,15 +288,17 @@ img {
   color: var(--title-text-color);
 }
 .project-img {
+  width: 370px;
   background-color: #f5f4fa;
 }
 
-.project .project-text {
-  font-weight: 400;
+.project-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.875px;
   letter-spacing: 0.03em;
-  color: var(--primery-text-color);
 }
 /*==============FOOTER================*/
 .footer {
@@ -284,14 +306,12 @@ img {
 }
 .tube {
   padding-top: 60px;
-  /*outline: 2px solid tomato;*/
 }
 
 .address-tube {
   display: flex;
   margin-top: 20px;
   padding-bottom: 60px;
-  /*outline: 2px solid tomato;*/
 }
 .tube .logo-tube {
   font-family: Raleway;
