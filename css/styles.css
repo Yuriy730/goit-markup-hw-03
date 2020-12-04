@@ -29,6 +29,7 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 .visually-hidden {
   position: absolute;
@@ -133,9 +134,8 @@ img {
 .address-cont .address-tel:focus {
   color: var(--accent-color);
 }
-/*=========HEADER==========*/
 
-/* Hero */
+/*=============== Hero =================*/
 
 .hero {
   background-color: #2f303a;
@@ -153,7 +153,7 @@ img {
   background-color: #2f303a;
 }
 
-/* button */
+/* =============button =================*/
 
 .modal-btn {
   border-radius: 4px;
@@ -168,7 +168,7 @@ img {
   outline: none;
 }
 
-/* features */
+/*============== features =============*/
 .features-list {
   display: flex;
   justify-content: space-between;
@@ -206,7 +206,7 @@ img {
   padding-bottom: 94px;
 }
 
-/*==========portfolio============*/
+/*=============portfolio===============*/
 .service-visual {
   display: flex;
   justify-content: center;
@@ -214,7 +214,7 @@ img {
 .service-list {
   display: flex;
   padding-top: 94px;
-  margin-bottom: 45px;
+  padding-bottom: 44px;
 }
 .service-list > .button-box:not(:last-child) {
   margin-right: 8px;
@@ -235,9 +235,10 @@ img {
   transform: rotate(-0.72deg);
 }
 
-.service .service-item:hover,
-.service .service-item:focus {
-  color: var(--accent-color);
+.service .button-item:hover,
+.service .button-item:focus {
+  color: var(--primery-white-color);
+  background-color: var(--accent-color);
 }
 /*=================CREW======================*/
 .section-crew {
@@ -257,13 +258,26 @@ img {
 }
 .crew {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  padding-bottom: 94px;
 }
-.crew > .crewlist + .crewlist {
+.crew > .crewlist {
+  margin-top: 30px;
   margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+.crew > .crewlist {
+  padding-bottom: 0px;
+  border: 1px solid #ececec;
+}
+.crewlist > .face {
+  margin-bottom: 30px;
 }
 .crewlist .passport {
   text-align: center;
-  padding: 30px 0 94px;
+  padding-bottom: 30px;
 }
 .crewlist .name {
   margin-bottom: 10px;
@@ -276,11 +290,20 @@ img {
   letter-spacing: 0.03em;
 }
 /*==========PORTFOLIO PROJECT=============*/
+
 .project {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -26px;
+  margin-left: -26px;
   padding-bottom: 94px;
-  outline: 2px solid tomato;
+}
+.project > .project-list {
+  flex-basis: calc(100% / 3 -26px);
+  box-sizing: border-box;
+  margin-left: 26px;
+  margin-top: 26px;
+  border: 1px solid #ececec;
 }
 .project-title {
   margin-bottom: 20px;
@@ -289,11 +312,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-}
-.project-img {
-  margin-bottom: 30px;
-  width: 370px;
-  background-color: #f5f4fa;
 }
 
 .project-text {
@@ -305,6 +323,8 @@ img {
   letter-spacing: 0.03em;
 }
 .text-box {
+  margin-top: 30px;
+  margin-left: 24px;
   padding-bottom: 30px;
   color: var(--primery-text-color);
 }
