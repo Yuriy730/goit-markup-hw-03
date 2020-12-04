@@ -324,8 +324,7 @@ img {
 }
 .text-box {
   margin-top: 30px;
-  margin-left: 24px;
-  padding-bottom: 30px;
+  padding: 0 24px 30px;
   color: var(--primery-text-color);
 }
 /*==============FOOTER================*/
