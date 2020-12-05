@@ -51,16 +51,17 @@ img {
 /*==========UTILITIES=========*/
 
 /*==========HEADER==========*/
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid #ececec;
+}
 .rubric {
   display: flex;
   align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
   align-items: center;
-  padding: 25 0;
 }
 
 .logo-accent {
@@ -169,10 +170,12 @@ img {
 }
 
 /*============== features =============*/
+.features {
+  padding: 94px 0;
+}
 .features-list {
   display: flex;
   justify-content: space-between;
-  padding: 94px 0;
 }
 .features-list-title {
   color: var(--title-text-color);
@@ -189,6 +192,9 @@ img {
 
 /*===== Subject of duties =========*/
 
+.section-duties {
+  padding-bottom: 94px;
+}
 .section-duties-title {
   display: flex;
   justify-content: center;
@@ -203,18 +209,18 @@ img {
 .container-duties {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 
 /*=============portfolio===============*/
+.service {
+  padding-top: 94px;
+}
 .service-visual {
   display: flex;
   justify-content: center;
 }
 .service-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 44px;
 }
 .service-list > .button-box:not(:last-child) {
   margin-right: 8px;
@@ -242,13 +248,14 @@ img {
 }
 /*=================CREW======================*/
 .section-crew {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--secondary-background-color);
 }
 .section-crew-title {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  padding-top: 94px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -261,7 +268,6 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  padding-bottom: 94px;
 }
 .crew > .crewlist {
   margin-top: 30px;
@@ -291,12 +297,15 @@ img {
 }
 /*==========PORTFOLIO PROJECT=============*/
 
+.cards-set {
+  padding-bottom: 94px;
+  padding-top: 44px;
+}
 .project {
   display: flex;
   flex-wrap: wrap;
   margin-top: -26px;
   margin-left: -26px;
-  padding-bottom: 94px;
 }
 .project > .project-list {
   flex-basis: calc(100% / 3 -26px);
@@ -306,7 +315,7 @@ img {
   border: 1px solid #ececec;
 }
 .project-title {
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -323,22 +332,18 @@ img {
   letter-spacing: 0.03em;
 }
 .text-box {
-  margin-top: 30px;
-  padding: 0 24px 30px;
+  padding: 30px 24px;
   color: var(--primery-text-color);
 }
 /*==============FOOTER================*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
-.tube {
-  padding-top: 60px;
-}
-
 .address-tube {
   display: flex;
   margin-top: 20px;
-  padding-bottom: 60px;
 }
 .tube .logo-tube {
   font-family: Raleway;
